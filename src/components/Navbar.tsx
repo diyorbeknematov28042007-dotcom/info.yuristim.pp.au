@@ -55,7 +55,7 @@ export function Navbar({ lang, labels }: NavbarProps) {
         <Link className="brand" href={localePath(lang)} aria-label="Yuristim home" onClick={() => setOpen(false)}>
           <span className="brand__mark">
             <Image
-              src="/assets/yuristim-logo.jpeg"
+              src="/assets/yuristim-logo.webp"
               alt=""
               width={44}
               height={44}
