@@ -24,7 +24,8 @@ import { ScrollProgress } from "@/components/ScrollProgress";
 import { Reveal } from "@/components/Reveal";
 import { MagneticLink } from "@/components/MagneticLink";
 import { StickyStory } from "@/components/StickyStory";
-import { AIModeSwitcher } from "@/components/AIModeSwitcher";\nimport { AppleIcon } from "@/components/AppleIcon";
+import { AIModeSwitcher } from "@/components/AIModeSwitcher";
+import { AppleIcon } from "@/components/AppleIcon";
 import { EcosystemMap } from "@/components/EcosystemMap";
 import { localePath } from "@/lib/i18n";
 
