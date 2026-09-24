@@ -34,7 +34,7 @@ export function AIModeSwitcher({ fast, expert }: AIModeSwitcherProps) {
             className={mode === "fast" ? "is-active" : ""}
             onClick={() => setMode("fast")}
           >
-            <Zap size={15} aria-hidden="true" /> {fast.name}
+            <Zap size={15} strokeWidth={1.7} absoluteStrokeWidth aria-hidden="true" /> {fast.name}
           </button>
           <button
             type="button"
@@ -43,7 +43,7 @@ export function AIModeSwitcher({ fast, expert }: AIModeSwitcherProps) {
             className={mode === "expert" ? "is-active" : ""}
             onClick={() => setMode("expert")}
           >
-            <Sparkles size={15} aria-hidden="true" /> {expert.name}
+            <Sparkles size={15} strokeWidth={1.7} absoluteStrokeWidth aria-hidden="true" /> {expert.name}
           </button>
         </div>
       </div>
@@ -54,7 +54,7 @@ export function AIModeSwitcher({ fast, expert }: AIModeSwitcherProps) {
         <ul>
           {active.bullets.map((item) => (
             <li key={item}>
-              <Check size={15} aria-hidden="true" /> {item}
+              <Check size={15} strokeWidth={1.7} absoluteStrokeWidth aria-hidden="true" /> {item}
             </li>
           ))}
         </ul>
