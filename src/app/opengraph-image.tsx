@@ -7,7 +7,7 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function Image() {
-  const logo = await readFile(new URL("../../../public/assets/yuristim-logo.webp", import.meta.url));
+  const logo = await readFile(new URL("../../public/assets/yuristim-logo.webp", import.meta.url));
   const src = `data:image/webp;base64,${logo.toString("base64")}`;
 
   return new ImageResponse(
