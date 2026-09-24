@@ -11,9 +11,9 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: "#00875A",
     icons: [
       {
-        src: "/assets/yuristim-logo.jpeg",
-        sizes: "1254x1254",
-        type: "image/jpeg",
+        src: "/assets/yuristim-logo.webp",
+        sizes: "320x320",
+        type: "image/webp",
       },
     ],
   };
