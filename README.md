@@ -44,8 +44,8 @@ git diff --check
 
 Source-of-truth assets supplied for V1:
 
-- `public/assets/yuristim-logo.jpeg` — official Yuristim mark
-- `public/assets/founder-diyorbek.jpeg` — founder portrait
+- `public/assets/yuristim-logo.webp` — official Yuristim mark
+- `public/assets/founder-diyorbek.webp` — founder portrait
 
 Do not replace these with generated or stock assets.
 
