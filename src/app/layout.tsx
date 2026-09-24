@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   publisher: "Yuristim",
   category: "LegalTech",
   icons: {
-    icon: "/assets/yuristim-logo.jpeg",
-    apple: "/assets/yuristim-logo.jpeg",
+    icon: "/assets/yuristim-logo.webp",
+    apple: "/assets/yuristim-logo.webp",
   },
   openGraph: {
     type: "website",
