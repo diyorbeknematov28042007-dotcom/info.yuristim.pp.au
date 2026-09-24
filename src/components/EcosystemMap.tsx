@@ -60,7 +60,7 @@ export function EcosystemMap({ text }: { text: SiteCopy["ecosystem"] }) {
             href={ECOSYSTEM[node.key]}
             style={{ left: `${left}%`, top: `${top}%` }}
           >
-            <Icon size={18} aria-hidden="true" />
+            <Icon size={18} strokeWidth={1.7} absoluteStrokeWidth aria-hidden="true" />
             <span>
               <small>{node.short}</small>
               <strong>{node.label}</strong>
