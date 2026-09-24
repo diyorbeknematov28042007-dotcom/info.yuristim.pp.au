@@ -41,15 +41,15 @@ export function HeroVisual({ hero }: { hero: SiteCopy["hero"] }) {
       </div>
 
       <div className="hero-node hero-node--ai">
-        <Sparkles size={18} aria-hidden="true" />
+        <Sparkles size={18} strokeWidth={1.7} absoluteStrokeWidth aria-hidden="true" />
         <strong>{hero.ai}</strong>
       </div>
       <div className="hero-node hero-node--doc">
-        <FileText size={18} aria-hidden="true" />
+        <FileText size={18} strokeWidth={1.7} absoluteStrokeWidth aria-hidden="true" />
         <strong>{hero.document}</strong>
       </div>
       <div className="hero-node hero-node--lawyer">
-        <Scale size={18} aria-hidden="true" />
+        <Scale size={18} strokeWidth={1.7} absoluteStrokeWidth aria-hidden="true" />
         <strong>{hero.lawyer}</strong>
       </div>
 
