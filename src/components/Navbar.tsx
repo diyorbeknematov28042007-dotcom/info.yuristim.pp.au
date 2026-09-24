@@ -90,7 +90,7 @@ export function Navbar({ lang, labels }: NavbarProps) {
           </div>
           <a className="nav-cta" href={ECOSYSTEM.web}>
             {labels.open}
-            <ArrowUpRight size={16} aria-hidden="true" />
+            <ArrowUpRight size={16} strokeWidth={1.7} absoluteStrokeWidth aria-hidden="true" />
           </a>
           <button
             type="button"
@@ -100,7 +100,7 @@ export function Navbar({ lang, labels }: NavbarProps) {
             aria-controls="mobile-navigation"
             onClick={() => setOpen((value) => !value)}
           >
-            {open ? <X size={21} /> : <Menu size={21} />}
+            {open ? <X size={21} strokeWidth={1.7} absoluteStrokeWidth /> : <Menu size={21} strokeWidth={1.7} absoluteStrokeWidth />}
           </button>
         </div>
       </div>
@@ -134,7 +134,7 @@ export function Navbar({ lang, labels }: NavbarProps) {
             </div>
             <a className="button button--primary button--wide" href={ECOSYSTEM.web}>
               {labels.open}
-              <ArrowUpRight size={17} aria-hidden="true" />
+              <ArrowUpRight size={17} strokeWidth={1.7} absoluteStrokeWidth aria-hidden="true" />
             </a>
           </div>
         </div>
