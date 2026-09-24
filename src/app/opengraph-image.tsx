@@ -45,8 +45,8 @@ export default async function Image() {
           >
             <img
               src={logoSrc}
-              width="64"
-              height="64"
+              width={64}
+              height={64}
               alt=""
               style={{ borderRadius: 16 }}
             />
