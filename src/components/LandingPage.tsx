@@ -24,7 +24,7 @@ import { ScrollProgress } from "@/components/ScrollProgress";
 import { Reveal } from "@/components/Reveal";
 import { MagneticLink } from "@/components/MagneticLink";
 import { StickyStory } from "@/components/StickyStory";
-import { AIModeSwitcher } from "@/components/AIModeSwitcher";
+import { AIModeSwitcher } from "@/components/AIModeSwitcher";\nimport { AppleIcon } from "@/components/AppleIcon";
 import { EcosystemMap } from "@/components/EcosystemMap";
 import { localePath } from "@/lib/i18n";
 
@@ -134,7 +134,7 @@ export function LandingPage({ lang, text }: LandingPageProps) {
               const Icon = trustIcons[index];
               return (
                 <div key={item} className="trust-strip__item">
-                  <Icon size={17} aria-hidden="true" />
+                  <AppleIcon icon={Icon} size={16} />
                   <span>{item}</span>
                 </div>
               );
@@ -201,21 +201,21 @@ export function LandingPage({ lang, text }: LandingPageProps) {
                         <span className="visual-ai__line visual-ai__line--one" />
                         <span className="visual-ai__line visual-ai__line--two" />
                         <span className="visual-ai__line visual-ai__line--three" />
-                        <Sparkles size={26} />
+                        <Sparkles size={26} strokeWidth={1.7} absoluteStrokeWidth />
                       </div>
                     )}
                     {index === 1 && (
                       <div className="visual-lawyers">
-                        <span><UserCheck size={20} /></span>
-                        <span><Scale size={22} /></span>
-                        <span><UserCheck size={20} /></span>
+                        <span><UserCheck size={20} strokeWidth={1.7} absoluteStrokeWidth /></span>
+                        <span><Scale size={22} strokeWidth={1.7} absoluteStrokeWidth /></span>
+                        <span><UserCheck size={20} strokeWidth={1.7} absoluteStrokeWidth /></span>
                         <i />
                       </div>
                     )}
                     {index === 2 && (
                       <div className="visual-documents">
-                        <div><FileText size={24} /></div>
-                        <div><FileCheck2 size={24} /></div>
+                        <div><FileText size={24} strokeWidth={1.7} absoluteStrokeWidth /></div>
+                        <div><FileCheck2 size={24} strokeWidth={1.7} absoluteStrokeWidth /></div>
                         <span />
                       </div>
                     )}
@@ -294,7 +294,7 @@ export function LandingPage({ lang, text }: LandingPageProps) {
               </Reveal>
 
               <Reveal className="document-panel document-panel--beta" delay={80}>
-                <span className="document-panel__icon"><Sparkles size={24} /></span>
+                <span className="document-panel__icon"><Sparkles size={24} strokeWidth={1.7} absoluteStrokeWidth /></span>
                 <p className="panel-label">02 · BETA</p>
                 <h3>{text.documents.betaTitle}</h3>
                 <p>{text.documents.betaBody}</p>
@@ -430,7 +430,7 @@ export function LandingPage({ lang, text }: LandingPageProps) {
                 const Icon = trustSectionIcons[index];
                 return (
                   <Reveal className="trust-card" key={title} delay={index * 45}>
-                    <Icon size={20} aria-hidden="true" />
+                    <AppleIcon icon={Icon} size={18} />
                     <h3>{title}</h3>
                     <p>{body}</p>
                   </Reveal>
