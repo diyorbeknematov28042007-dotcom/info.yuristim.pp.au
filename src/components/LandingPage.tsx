@@ -43,7 +43,7 @@ export function LandingPage({ lang, text }: LandingPageProps) {
       "@type": "Organization",
       name: "Yuristim",
       url: ECOSYSTEM.info,
-      logo: `${ECOSYSTEM.info}/assets/yuristim-logo.jpeg`,
+      logo: `${ECOSYSTEM.info}/assets/yuristim-logo.webp`,
       sameAs: [ECOSYSTEM.bot],
     },
     {
@@ -87,7 +87,7 @@ export function LandingPage({ lang, text }: LandingPageProps) {
             <div className="hero__copy">
               <div className="hero__brand-intro" aria-hidden="true">
                 <Image
-                  src="/assets/yuristim-logo.jpeg"
+                  src="/assets/yuristim-logo.webp"
                   alt=""
                   width={54}
                   height={54}
@@ -377,7 +377,7 @@ export function LandingPage({ lang, text }: LandingPageProps) {
               <Reveal className="founder-portrait">
                 <div className="founder-portrait__frame">
                   <Image
-                    src="/assets/founder-diyorbek.jpeg"
+                    src="/assets/founder-diyorbek.webp"
                     alt={text.team.founderAlt}
                     fill
                     sizes="(max-width: 768px) 100vw, 52vw"
@@ -482,7 +482,7 @@ export function LandingPage({ lang, text }: LandingPageProps) {
           <div className="footer-brand">
             <a className="brand brand--footer" href={localePath(lang)}>
               <span className="brand__mark">
-                <Image src="/assets/yuristim-logo.jpeg" alt="" width={44} height={44} sizes="44px" />
+                <Image src="/assets/yuristim-logo.webp" alt="" width={44} height={44} sizes="44px" />
               </span>
               <span>Yuristim</span>
             </a>
