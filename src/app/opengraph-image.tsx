@@ -7,8 +7,8 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function Image() {
-  const logo = await readFile(new URL("../../public/assets/yuristim-logo.webp", import.meta.url));
-  const src = `data:image/webp;base64,${logo.toString("base64")}`;
+  const logo = await readFile(new URL("../../public/assets/yuristim-logo-og.jpg", import.meta.url));
+  const logoSrc = `data:image/jpeg;base64,${logo.toString("base64")}`;
 
   return new ImageResponse(
     (
@@ -19,48 +19,99 @@ export default async function Image() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          padding: "72px 84px",
+          padding: "72px 80px",
           background: "#ffffff",
           color: "#111827",
           fontFamily: "Arial, sans-serif",
-          position: "relative",
-          overflow: "hidden",
         }}
       >
         <div
           style={{
-            position: "absolute",
-            width: 520,
-            height: 520,
-            borderRadius: 999,
-            right: -120,
-            bottom: -230,
-            background: "radial-gradient(circle, #dff7ec 0%, rgba(223,247,236,0) 70%)",
-          }}
-        />
-        <div style={{ display: "flex", flexDirection: "column", gap: 28, maxWidth: 760 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 14, fontSize: 28, fontWeight: 700 }}>
-            <img src={src} width="58" height="58" alt="" style={{ borderRadius: 14 }} />
-            Yuristim
-          </div>
-          <div style={{ fontSize: 72, lineHeight: 0.98, fontWeight: 780, letterSpacing: "-4px" }}>
-            O‘zbekiston uchun LegalTech
-          </div>
-          <div style={{ fontSize: 26, color: "#52605a" }}>AI · Hujjatlar · Professional yuristlar</div>
-        </div>
-        <div
-          style={{
             display: "flex",
-            width: 220,
-            height: 220,
-            border: "1px solid #bfe8d6",
-            borderRadius: 999,
-            alignItems: "center",
+            flexDirection: "column",
             justifyContent: "center",
-            background: "rgba(243,255,249,.85)",
+            width: 790,
           }}
         >
-          <img src={src} width="150" height="150" alt="" style={{ borderRadius: 999 }} />
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 16,
+              marginBottom: 42,
+              fontSize: 28,
+              fontWeight: 700,
+            }}
+          >
+            <img
+              src={logoSrc}
+              width="64"
+              height="64"
+              alt=""
+              style={{ borderRadius: 16 }}
+            />
+            Yuristim
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              fontSize: 74,
+              lineHeight: 0.98,
+              fontWeight: 800,
+              letterSpacing: "-4px",
+            }}
+          >
+            O‘zbekiston uchun LegalTech
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              marginTop: 28,
+              fontSize: 26,
+              color: "#52605a",
+            }}
+          >
+            AI · Hujjatlar · Professional yuristlar
+          </div>
+        </div>
+
+        <div
+          style={{
+            width: 250,
+            height: 420,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: 44,
+            background: "#f3fff9",
+            border: "1px solid #dff7ec",
+          }}
+        >
+          <div
+            style={{
+              width: 180,
+              height: 180,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: 90,
+              background: "#ffffff",
+              border: "1px solid #bfe8d6",
+            }}
+          >
+            <span
+              style={{
+                display: "flex",
+                color: "#00875a",
+                fontSize: 72,
+                fontWeight: 800,
+              }}
+            >
+              Y
+            </span>
+          </div>
         </div>
       </div>
     ),
